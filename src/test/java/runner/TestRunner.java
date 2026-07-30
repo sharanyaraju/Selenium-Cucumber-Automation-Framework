@@ -15,9 +15,9 @@ import org.testng.annotations.DataProvider;
                 "hooks"
         },
 
-        plugin={
+        plugin = {
                 "pretty",
-                "tech.grasshopper.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
 
         monochrome=true

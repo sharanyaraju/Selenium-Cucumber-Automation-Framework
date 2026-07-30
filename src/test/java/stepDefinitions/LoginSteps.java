@@ -69,4 +69,9 @@ public class LoginSteps {
 
     }
 
+    @Then("Add {string} to the cart")
+    public void add_to_the_cart(String product) {
+
+    }
+
 }
