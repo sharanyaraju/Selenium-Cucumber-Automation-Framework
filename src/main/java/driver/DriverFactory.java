@@ -12,6 +12,9 @@ public class DriverFactory {
     public static void initializeDriver() {
         ConfigReader.initializeProperties();
         String browser = ConfigReader.getProperty("browser");
+        if(browser == null || browser.isEmpty()) {
+            browser = "chrome";
+        }
         WebDriver webDriver;
         switch (browser){
             case "chrome":
