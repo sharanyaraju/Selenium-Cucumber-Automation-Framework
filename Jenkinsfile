@@ -27,7 +27,7 @@ pipeline {
 
 
 
-        stage('Build') {
+        stage('Test Execution') {
 
             steps {
 
@@ -45,7 +45,16 @@ pipeline {
 
         always {
 
-            echo 'Execution Completed'
+            publishHTML(
+                target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'test-output',
+                    reportFiles: 'spark.html',
+                    reportName: 'Automation Report'
+                ]
+            )
 
         }
 
