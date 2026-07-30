@@ -31,6 +31,7 @@ public class DriverFactory {
 
             default:
                 webDriver = new ChromeDriver();
+                break;
 
 
         }
