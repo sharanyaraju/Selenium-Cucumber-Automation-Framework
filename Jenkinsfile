@@ -51,7 +51,7 @@ pipeline {
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: 'target/SparkReport',
-                    reportFiles: 'spark.html',
+                    reportFiles: 'Spark.html',
                     reportName: 'Automation Report'
                 ]
             )
